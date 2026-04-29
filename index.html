@@ -34,37 +34,59 @@
 
   .verdict { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem; }
   .verdict.buy { background: var(--green-light); color: var(--high); border: 1px solid #aff0af; }
-  .verdict.hold { background: var(--yellow-light); color: var(--med); border: 1px solid #f5e060; }
-  .verdict.sell { background: var(--red-light); color: #cf222e; border: 1px solid #f8a4a8; }
 
-  .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
-  .summary-block h3 { font-size: 0.85rem; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; border-bottom: 2px solid var(--border); padding-bottom: 0.3rem; }
-  .summary-block ul { list-style: none; padding: 0; }
-  .summary-block li { padding: 0.3rem 0; font-size: 0.88rem; line-height: 1.5; }
-  .summary-block li .ticker { font-weight: 700; color: var(--accent); }
-  .summary-block li .rating { font-size: 0.75rem; padding: 1px 6px; border-radius: 8px; font-weight: 600; margin-left: 4px; }
-  .summary-block li .rating.buy { background: var(--green-light); color: var(--high); }
-  .summary-block li .rating.sell { background: var(--red-light); color: #cf222e; }
-  .summary-block li .rating.neutral { background: var(--yellow-light); color: var(--med); }
-  .summary-block li .target { color: var(--text2); font-size: 0.82rem; }
-  .summary-block li .upside { color: var(--high); font-weight: 600; font-size: 0.82rem; }
-  .summary-block li .downside { color: #cf222e; font-weight: 600; font-size: 0.82rem; }
+  /* Chain diagram */
+  .chain-flow { display: flex; align-items: center; gap: 0; margin: 1.2rem 0; overflow-x: auto; padding-bottom: 0.5rem; }
+  .chain-node { background: var(--surface); border: 2px solid var(--border); border-radius: 10px; padding: 0.6rem 1rem; min-width: 120px; text-align: center; flex-shrink: 0; }
+  .chain-node.active { border-color: var(--accent); background: #f0f6ff; }
+  .chain-node .cn-title { font-size: 0.78rem; font-weight: 700; color: var(--text); }
+  .chain-node .cn-sub { font-size: 0.68rem; color: var(--text2); margin-top: 2px; }
+  .chain-node .cn-m { font-size: 0.65rem; color: var(--accent); font-weight: 600; margin-top: 1px; }
+  .chain-arrow { font-size: 1.2rem; color: var(--border); flex-shrink: 0; margin: 0 2px; }
 
-  .key-data { margin-top: 1rem; padding: 0.8rem 1rem; background: #fff; border: 1px solid var(--border); border-radius: 8px; }
-  .key-data h3 { font-size: 0.85rem; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
-  .key-data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem 1.5rem; }
-  .key-data-item { font-size: 0.85rem; }
-  .key-data-item .k { color: var(--text2); }
-  .key-data-item .v { font-weight: 700; color: var(--text); }
+  /* Segment cards */
+  .seg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+  .seg-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .seg-card-header { padding: 0.6rem 1rem; font-size: 0.85rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+  .seg-card-header .seg-label { font-size: 0.7rem; padding: 1px 8px; border-radius: 10px; color: #fff; font-weight: 600; }
+  .seg-card-body { padding: 0.8rem 1rem; background: #fff; }
+  .seg-card-body p { font-size: 0.82rem; color: var(--text2); line-height: 1.55; margin-bottom: 0.5rem; }
+  .seg-card-body p strong { color: var(--text); }
+
+  /* Company table */
+  .co-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .co-table th { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 2px solid var(--border); font-size: 0.72rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.3px; font-weight: 700; }
+  .co-table td { padding: 0.45rem 0.6rem; border-bottom: 1px solid #eee; vertical-align: top; }
+  .co-table tr:hover { background: var(--surface); }
+  .co-table .ticker { font-weight: 700; color: var(--accent); white-space: nowrap; }
+  .co-table .co-name { color: var(--text2); font-size: 0.78rem; }
+  .co-table .pe { font-weight: 600; }
+  .co-table .up { color: var(--high); font-weight: 600; }
+  .co-table .dn { color: #cf222e; font-weight: 600; }
+  .co-table .rating-buy { background: var(--green-light); color: var(--high); padding: 1px 5px; border-radius: 6px; font-size: 0.72rem; font-weight: 600; }
+  .co-table .rating-sell { background: var(--red-light); color: #cf222e; padding: 1px 5px; border-radius: 6px; font-size: 0.72rem; font-weight: 600; }
+  .co-table .rating-neutral { background: var(--yellow-light); color: var(--med); padding: 1px 5px; border-radius: 6px; font-size: 0.72rem; font-weight: 600; }
+
+  /* Data bar */
+  .data-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin: 1rem 0; }
+  .data-cell { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 0.7rem 0.8rem; text-align: center; }
+  .data-cell .dc-val { font-size: 1.3rem; font-weight: 800; color: var(--text); }
+  .data-cell .dc-val.green { color: var(--high); }
+  .data-cell .dc-val.red { color: #cf222e; }
+  .data-cell .dc-label { font-size: 0.72rem; color: var(--text2); margin-top: 2px; }
+  .data-cell .dc-sub { font-size: 0.65rem; color: var(--accent); margin-top: 1px; }
 
   .risk-box { margin-top: 1rem; padding: 0.8rem 1rem; background: var(--red-light); border: 1px solid #f8a4a8; border-radius: 8px; }
   .risk-box h3 { font-size: 0.85rem; font-weight: 700; color: #cf222e; margin-bottom: 0.4rem; }
   .risk-box ul { list-style: disc; padding-left: 1.2rem; }
   .risk-box li { font-size: 0.85rem; color: #6e1b23; line-height: 1.5; }
 
+  .source-note { font-size: 0.72rem; color: var(--text2); margin-top: 0.8rem; font-style: italic; }
+
   @media (max-width: 700px) {
-    .summary-grid { grid-template-columns: 1fr; }
-    .key-data-grid { grid-template-columns: 1fr 1fr; }
+    .seg-grid { grid-template-columns: 1fr; }
+    .data-bar { grid-template-columns: 1fr 1fr; }
+    .chain-flow { justify-content: flex-start; }
   }
 
   .controls { display: flex; justify-content: center; gap: 0.75rem; padding: 0 1rem 1rem; flex-wrap: wrap; }
@@ -134,63 +156,258 @@
 <!-- Investment Summary -->
 <section class="summary-section">
 <div class="summary-card">
-  <h2><span class="icon">&#x1F4C8;</span> 投资观点总结</h2>
-  <div class="verdict buy">&#x2705; 偏多 — 多家外资行上调锂价预期，供需趋紧</div>
+  <h2><span class="icon">&#x1F4CA;</span> 锂电产业链投资图谱</h2>
+  <div class="verdict buy">&#x2705; 偏多 — 供需趋紧，多家外资行上调锂价</div>
 
-  <div class="summary-grid">
-    <div class="summary-block">
-      <h3>推荐买入</h3>
-      <ul>
-        <li><span class="ticker">天齐锂业 002466</span> <span class="rating buy">Buy</span> <span class="target">目标价 78.30</span> <span class="upside">+6.3%</span><br>中国唯一锂原料完全自给，Greenbushes矿山 — UBS</li>
-        <li><span class="ticker">宁德时代 300750</span> <span class="rating buy">Add</span> <span class="target">目标价 612</span> <span class="upside">+40.3%</span><br>超级科技日发布多款新品，全球动力电池龙头 — 野村</li>
-        <li><span class="ticker">先导智能 300450</span> <span class="rating buy">Buy</span> <span class="target">目标价 73</span> <span class="upside">+50.8%</span><br>锂电设备需求修复，固态电池设备突破 — 野村</li>
-        <li><span class="ticker">科达利 002850</span> <span class="rating buy">OW</span> <span class="target">目标价 293</span> <span class="upside">+42.8%</span><br>Q1业绩超预期，全球化布局+机器人 — 野村</li>
-        <li><span class="ticker">厦钨新能 688778</span> <span class="rating buy">Add</span> <span class="target">目标价 103.2</span> <span class="upside">+29.1%</span><br>Q1营收+117.8%，正极材料量价齐升 — 野村</li>
-        <li><span class="ticker">POSCO 005490.KS</span> <span class="rating buy">Buy</span> <span class="target">目标价 50万韩元</span> <span class="upside">+20%</span><br>锂资产重估，阿根廷2026年盈亏平衡 — UBS</li>
-        <li><span class="ticker">比亚迪 1211.HK</span> <span class="rating buy">Buy</span><br>全球电池+电气化高确定性敞口 — UBS</li>
-      </ul>
+  <!-- Chain Flow -->
+  <div class="chain-flow">
+    <div class="chain-node active">
+      <div class="cn-title">上游·资源</div>
+      <div class="cn-sub">锂辉石/盐湖/云母</div>
+      <div class="cn-m">毛利 50-70%</div>
     </div>
-    <div class="summary-block">
-      <h3>回避 / 谨慎</h3>
-      <ul>
-        <li><span class="ticker">赢合科技 300457</span> <span class="rating sell">Sell</span> <span class="target">目标价 18.40</span> <span class="downside">-35.8%</span><br>Q1利润-74%，毛利率大幅下滑 — UBS</li>
-        <li><span class="ticker">阳光电源 300274</span> <span class="rating neutral">Add→Neutral</span><br>Q1业绩承压，储能价格压力+碳酸锂上行 — 野村</li>
-      </ul>
-      <h3 style="margin-top:1rem">值得关注的环节</h3>
-      <ul>
-        <li><strong>锂矿资源</strong>：碳酸锂价格上行，天齐/赣锋/IGO受益</li>
-        <li><strong>储能(BESS)</strong>：全球新增装机+87%，美国需求三倍增长</li>
-        <li><strong>锂电池材料</strong>：量价齐升周期，正极/电解液/隔膜</li>
-        <li><strong>电池设备</strong>：固态电池产业化，钠电设备新赛道</li>
-        <li><strong>含氟材料</strong>：六氟磷酸锂/制冷剂涨价 — 三美股份</li>
-      </ul>
+    <div class="chain-arrow">&#x27A1;</div>
+    <div class="chain-node">
+      <div class="cn-title">中游·材料</div>
+      <div class="cn-sub">正极/负极/电解液/隔膜</div>
+      <div class="cn-m">毛利 8-25%</div>
+    </div>
+    <div class="chain-arrow">&#x27A1;</div>
+    <div class="chain-node">
+      <div class="cn-title">中游·电池</div>
+      <div class="cn-sub">动力/储能电芯</div>
+      <div class="cn-m">毛利 22-28%</div>
+    </div>
+    <div class="chain-arrow">&#x27A1;</div>
+    <div class="chain-node active">
+      <div class="cn-title">下游·应用</div>
+      <div class="cn-sub">EV/储能/消费电子</div>
+      <div class="cn-m">需求 +30%YoY</div>
     </div>
   </div>
 
-  <div class="key-data">
-    <h3>关键市场数据</h3>
-    <div class="key-data-grid">
-      <div class="key-data-item"><span class="k">锂辉石(SC6)</span> <span class="v">$1,400/t</span></div>
-      <div class="key-data-item"><span class="k">2026电池需求</span> <span class="v">1.81 TWh</span></div>
-      <div class="key-data-item"><span class="k">2027电池需求</span> <span class="v">2.35 TWh</span></div>
-      <div class="key-data-item"><span class="k">锂需求2025→27</span> <span class="v">170→232万吨</span></div>
-      <div class="key-data-item"><span class="k">供需缺口</span> <span class="v">供<需 ~2.7万吨</span></div>
-      <div class="key-data-item"><span class="k">BESS项目管道</span> <span class="v">2.1 TWh</span></div>
+  <!-- Key Price Data -->
+  <div class="data-bar">
+    <div class="data-cell">
+      <div class="dc-val green">$1,400/t</div>
+      <div class="dc-label">锂辉石 SC6.0</div>
+      <div class="dc-sub">UBS长期预期，短期+23%</div>
+    </div>
+    <div class="data-cell">
+      <div class="dc-val green">1.81 TWh</div>
+      <div class="dc-label">2026全球电池需求</div>
+      <div class="dc-sub">2027年 2.35 TWh</div>
+    </div>
+    <div class="data-cell">
+      <div class="dc-val">170→232</div>
+      <div class="dc-label">锂需求(万吨) 2025→27</div>
+      <div class="dc-sub">供需缺口 ~2.7万吨/年</div>
+    </div>
+    <div class="data-cell">
+      <div class="dc-val green">+87%</div>
+      <div class="dc-label">2026储能新增装机YoY</div>
+      <div class="dc-sub">BESS管道 2.1TWh</div>
     </div>
   </div>
 
+  <!-- Segment Cards -->
+  <div class="seg-grid">
+    <!-- Upstream -->
+    <div class="seg-card">
+      <div class="seg-card-header" style="background:#e8f5e9; color:var(--high);">
+        上游 · 锂矿资源
+        <span class="seg-label" style="background:var(--high);">利润最厚</span>
+      </div>
+      <div class="seg-card-body">
+        <p><strong>格局：</strong>全球锂供给高度集中，澳大利亚锂辉石占全球~50%，南美盐湖~30%，中国云母/盐湖~20%。IGO旗下Greenbushes为全球最大锂辉石矿，天齐锂业持股51%。</p>
+        <p><strong>价值：</strong>上游资源端毛利50-70%，是天齐锂业EBIT利润率65%+的核心来源。锂价每涨10%，资源股盈利弹性最大。碳酸锂价格上行周期中，上游确定性最高。</p>
+        <p><strong>边际变化：</strong>UBS上调锂价预期17-47%，IGO减产+Zimbabwe禁出口令供应收紧。2026-2027年供给增长59.6万吨 < 需求增长62.3万吨，市场持续紧张。</p>
+      </div>
+    </div>
+    <!-- Midstream Materials -->
+    <div class="seg-card">
+      <div class="seg-card-header" style="background:#fff3e0; color:#e65100;">
+        中游 · 电池材料
+        <span class="seg-label" style="background:#e65100;">量价齐升</span>
+      </div>
+      <div class="seg-card-body">
+        <p><strong>格局：</strong>正极材料(三元/铁锂)中国占全球80%+产能，龙头容百/厦钨/德方；电解液天赐材料市占率~35%；隔膜恩捷股份市占率~30%。竞争激烈，毛利率普遍6-25%。</p>
+        <p><strong>价值：</strong>正极材料随锂价传导，毛利较薄(6-22%)但受益于量增。电解液/隔膜格局更优，龙头利润更稳。磷酸铁锂需求爆发式增长(厦钨+2170% YoY)。</p>
+        <p><strong>边际变化：</strong>中东冲突推高电解液溶剂/针状焦等化工原料价格。碳酸锂上行既推升售价也增加成本，拥有锂盐自给能力的正极厂商更受益。钠电池产业化加速，对锂电材料形成长期替代压力。</p>
+      </div>
+    </div>
+    <!-- Midstream Batteries -->
+    <div class="seg-card">
+      <div class="seg-card-header" style="background:#e3f2fd; color:#0d47a1;">
+        中游 · 动力/储能电池
+        <span class="seg-label" style="background:#0d47a1;">龙头护城河</span>
+      </div>
+      <div class="seg-card-body">
+        <p><strong>格局：</strong>宁德时代全球动力电池市占率~37%，比亚迪~17%，两者合计超50%。中国电池制造商保持30-35%结构性成本优势。韩国电池商(LG/Samsung/SK)预计占据美国BESS市场85%。</p>
+        <p><strong>价值：</strong>电池环节毛利22-28%，规模效应+技术迭代形成护城河。宁德时代"超级科技日"发布第三代神行/麒麟/钠电池，技术代差拉大。LFP成本比市场共识低30%(UBS拆解)。</p>
+        <p><strong>边际变化：</strong>2026年3月中国动力电池销量+31.1%，储能电池销量+115.9%。但碳酸锂价格上行侵蚀电池厂利润，宁德时代毛利率预测被野村下调。储能系统价格压力导致阳光电源Q1业绩承压。</p>
+      </div>
+    </div>
+    <!-- Downstream -->
+    <div class="seg-card">
+      <div class="seg-card-header" style="background:#fce4ec; color:#880e4f;">
+        下游 · EV/储能/AI电力
+        <span class="seg-label" style="background:#880e4f;">需求爆发</span>
+      </div>
+      <div class="seg-card-body">
+        <p><strong>格局：</strong>EV从政策驱动转向消费者主导(UBS)，中国/欧洲渗透率超40%，美国仍<15%。储能BESS为第二大收入池，美国政策支持可覆盖50% CapEx，双位数IRR。AI数据中心用电激增，成为储能新增长极。</p>
+        <p><strong>价值：</strong>下游需求确定性高，但竞争加剧利润率承压。储能系统集成商面临价格战，阳光电源毛利率承压。EV终端通过电池成本下降让利用户。</p>
+        <p><strong>边际变化：</strong>中东冲突加速EV/储能替代化石能源。中国电动卡车需求加速(UBS新关注点)。美国BESS到2030年~200GWh，约3倍增长。Tesla签43亿美元LFP电池协议(巴克莱)。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company Valuation Table -->
+  <h2 style="font-size:1.1rem; margin:1.5rem 0 0.8rem; color:var(--text);"><span class="icon">&#x1F4CB;</span> 核心标的估值一览</h2>
+  <div style="overflow-x:auto;">
+  <table class="co-table">
+    <thead>
+      <tr><th>标的</th><th>环节</th><th>评级</th><th>目标价</th><th>上行空间</th><th>2026E PE</th><th>关键逻辑</th><th>来源</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="ticker">天齐锂业</span><br><span class="co-name">002466 / 9696.HK</span></td>
+        <td>上游资源</td>
+        <td><span class="rating-buy">Buy</span></td>
+        <td>78.30</td>
+        <td class="up">+6.3%</td>
+        <td class="pe">~12x</td>
+        <td>唯一锂原料完全自给，Greenbushes矿山，EBIT利润率65%+</td>
+        <td>UBS</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">赣锋锂业</span><br><span class="co-name">002460 / 1772.HK</span></td>
+        <td>上游资源</td>
+        <td><span class="rating-buy">Buy</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td class="pe">—</td>
+        <td>锂辉石+盐湖+回收一体化，阿根廷项目扩产</td>
+        <td>HSBC</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">POSCO</span><br><span class="co-name">005490.KS</span></td>
+        <td>上游资源</td>
+        <td><span class="rating-buy">Buy&#x2191;</span></td>
+        <td>50万韩元</td>
+        <td class="up">+20%</td>
+        <td class="pe">~18x</td>
+        <td>锂资产重估，阿根廷2026盈亏平衡，评级从Neutral上调</td>
+        <td>UBS</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">IGO</span><br><span class="co-name">IGO.AX</span></td>
+        <td>上游资源</td>
+        <td><span class="rating-buy">Buy</span></td>
+        <td>A$9.75</td>
+        <td>—</td>
+        <td class="pe">—</td>
+        <td>Greenbushes矿山25%权益，产量指引下调但价格抵消</td>
+        <td>UBS</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">宁德时代</span><br><span class="co-name">300750.SZ</span></td>
+        <td>电池制造</td>
+        <td><span class="rating-buy">Add</span></td>
+        <td>612</td>
+        <td class="up">+40.3%</td>
+        <td class="pe">~25x</td>
+        <td>全球电池龙头，超级科技日发布多款新品，毛利率24-25%</td>
+        <td>野村</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">比亚迪</span><br><span class="co-name">1211.HK</span></td>
+        <td>EV+电池</td>
+        <td><span class="rating-buy">Buy</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td class="pe">—</td>
+        <td>全球电池+电气化高确定性敞口，中国30-35%成本优势</td>
+        <td>UBS</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">厦钨新能</span><br><span class="co-name">688778.SH</span></td>
+        <td>正极材料</td>
+        <td><span class="rating-buy">Add</span></td>
+        <td>103.2</td>
+        <td class="up">+29.1%</td>
+        <td class="pe">~16x</td>
+        <td>Q1营收+117.8%，磷酸铁锂销量+2170%，固态正极突破</td>
+        <td>野村</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">科达利</span><br><span class="co-name">002850.SZ</span></td>
+        <td>结构件</td>
+        <td><span class="rating-buy">OW</span></td>
+        <td>293</td>
+        <td class="up">+42.8%</td>
+        <td class="pe">~24x</td>
+        <td>Q1营收+37.1%超预期，全球化+机器人结构件双轮驱动</td>
+        <td>野村</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">先导智能</span><br><span class="co-name">300450.SZ</span></td>
+        <td>电池设备</td>
+        <td><span class="rating-buy">Buy</span></td>
+        <td>73</td>
+        <td class="up">+50.8%</td>
+        <td class="pe">~45x</td>
+        <td>锂电设备营收+23.2%，固态/钠电/储能设备持续突破</td>
+        <td>野村</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">三美股份</span><br><span class="co-name">603379.SS</span></td>
+        <td>含氟材料</td>
+        <td><span class="rating-buy">Buy</span></td>
+        <td>84.5</td>
+        <td>—</td>
+        <td class="pe">~21x</td>
+        <td>六氟磷酸锂1,500t产能技改中，制冷剂涨价周期</td>
+        <td>UBS</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">阳光电源</span><br><span class="co-name">300274.SZ</span></td>
+        <td>储能系统</td>
+        <td><span class="rating-neutral">Neutral&#x2193;</span></td>
+        <td>120(原230)</td>
+        <td class="dn">-48%</td>
+        <td class="pe">~16x</td>
+        <td>Q1业绩承压，储能价格压力+碳酸锂侵蚀利润</td>
+        <td>野村</td>
+      </tr>
+      <tr>
+        <td><span class="ticker">赢合科技</span><br><span class="co-name">300457.SZ</span></td>
+        <td>锂电设备</td>
+        <td><span class="rating-sell">Sell</span></td>
+        <td>18.40</td>
+        <td class="dn">-35.8%</td>
+        <td class="pe">—</td>
+        <td>Q1利润-74%，毛利下滑，电子烟拖累，锂电设备净利率仅3%</td>
+        <td>UBS</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <!-- Risk -->
   <div class="risk-box">
-    <h3>风险提示</h3>
+    <h3>&#x26A0;&#xFE0F; 风险提示</h3>
     <ul>
-      <li>供应可能超预期增长（尼日利亚等不透明地区）</li>
-      <li>中国EV激励减少、购置税调整、消费者持币待购</li>
-      <li>美国EV市场仍面临挑战</li>
-      <li>碳酸锂价格上行侵蚀中游利润（储能/电池厂）</li>
-      <li>贸易壁垒上升影响中国电池制造商全球扩张</li>
-      <li>中东冲突不确定性影响能源成本和需求预测</li>
-      <li>锂价波动性高，历史上多次"假突破"</li>
+      <li><strong>供给超增</strong>：尼日利亚等不透明地区供应可能超预期，导致锂价回落</li>
+      <li><strong>中游利润被侵蚀</strong>：碳酸锂上行推高成本，储能/电池厂利润承压（阳光电源/宁德毛利率被下调）</li>
+      <li><strong>EV需求不及预期</strong>：中国激励退坡、购置税调整、消费者持币待购</li>
+      <li><strong>贸易壁垒</strong>：欧美加征关税限制中国电池制造商出海</li>
+      <li><strong>锂价假突破</strong>：历史上锂价多次反弹后回落（UBS标题"We've been up this road before"）</li>
+      <li><strong>钠电池替代</strong>：碳酸锂高位加速钠电池产业化，长期压制锂需求天花板</li>
     </ul>
   </div>
+
+  <p class="source-note">数据来源：UBS、野村、HSBC、巴克莱研报 AI 摘要 · 估值数据截至2026年4月下旬 · 目标价/评级来自各投行最新报告</p>
 </div>
 </section>
 
