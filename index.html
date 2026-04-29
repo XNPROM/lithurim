@@ -723,7 +723,8 @@ function render(data) {
       const relLabel = r.relevance === 'high' ? 'HIGH' : 'MED';
       const bankClass = BANK_COLORS[r.bank] || '';
       const summaryHtml = r.ai_summary ? `<div class="summary-box" id="sum-${r.date}-${r.title.replace(/[^a-z0-9]/gi,'').substring(0,12)}"><div class="sum-label">AI Summary</div>${escHtml(r.ai_summary)}</div>` : '';
-      const clickAttr = r.ai_summary ? `onclick="toggleSummary('sum-${r.date}-${r.title.replace(/[^a-z0-9]/gi,'').substring(0,12)}')"` : '';
+      const sumId = r.ai_summary ? `sum-${r.date}-${r.title.replace(/[^a-z0-9]/gi,'').substring(0,12)}` : '';
+      const clickAttr = sumId ? `data-sum="${sumId}"` : '';
 
       html += `
         <div class="report-row" data-bank="${r.bank}">
@@ -747,7 +748,14 @@ function render(data) {
 }
 
 function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-function toggleSummary(id) { const el = document.getElementById(id); if (el) el.classList.toggle('visible'); }
+
+// Event delegation for click-to-expand summaries
+document.getElementById('timeline').addEventListener('click', function(e) {
+  const title = e.target.closest('.report-title[data-sum]');
+  if (!title) return;
+  const box = document.getElementById(title.dataset.sum);
+  if (box) box.classList.toggle('visible');
+});
 
 // Initial render
 render(reports);
