@@ -2,7 +2,7 @@
 
 Lithium mining & battery metals research reports from major investment banks.
 
-**39 reports** collected from Goldman Sachs, UBS, Nomura, and Barclays.
+**50 reports** collected from Goldman Sachs, UBS, Nomura, and Barclays.
 
 ## Overview
 
@@ -10,6 +10,7 @@ Lithium mining & battery metals research reports from major investment banks.
 |------|---------|------------|
 | BARCLAYS | 2 | 2026-04-10 ~ 2026-04-29 |
 | GOLDMAN | 10 | 2022-01-12 ~ 2026-03-02 |
+| HSBC | 11 | 2026-04-29 ~ 2026-04-29 |
 | NOMURA | 15 | 2026-04-01 ~ 2026-04-28 |
 | UBS | 12 | 2026-04-10 ~ 2026-04-28 |
 
@@ -38,6 +39,22 @@ Lithium mining & battery metals research reports from major investment banks.
 | 2022-11-09 | Green Metals: Battery Metals Watch: Lithium delayed decline | **HIGH** |
 | 2022-05-29 | Green Metals: Battery Metals Watch: The end of the beginning | **HIGH** |
 | 2022-01-12 | Global Metals & Mining: EV battery metal recycling | **HIGH** |
+
+### HSBC (11 reports)
+
+| Date | Title | Relevance |
+|------|-------|-----------|
+| 2026-04-29 | Lithium | **HIGH** |
+| 2026-04-29 | Tianqi Lithium (9696 HK/002466 CH) | **HIGH** |
+| 2026-04-29 | China Lithium | **HIGH** |
+| 2026-04-29 | Lithium | **HIGH** |
+| 2026-04-29 | Ganfeng Lithium (1772 HK/002460 CH) | **HIGH** |
+| 2026-04-29 | Lithium | **HIGH** |
+| 2026-04-29 | Lithium Argentina AG (LAR US) | **HIGH** |
+| 2026-04-29 | Tianqi Lithium (9696 HK/002466 CH) | **HIGH** |
+| 2026-04-29 | Ganfeng Lithium (1772 HK/002460 CH) | **HIGH** |
+| 2026-04-29 | China Lithium | **HIGH** |
+| 2026-04-29 | China Lithium | **HIGH** |
 
 ### NOMURA (15 reports)
 
