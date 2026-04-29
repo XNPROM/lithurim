@@ -2,68 +2,101 @@
 
 Lithium mining & battery metals research reports from major investment banks.
 
-**29 reports** collected from Nomura, UBS, and Barclays (2026-04).
+**39 reports** collected from Goldman Sachs, UBS, Nomura, and Barclays.
+
+## Overview
+
+| Bank | Reports | Date Range |
+|------|---------|------------|
+| BARCLAYS | 2 | 2026-04-10 ~ 2026-04-29 |
+| GOLDMAN | 10 | 2022-01-12 ~ 2026-03-02 |
+| NOMURA | 15 | 2026-04-01 ~ 2026-04-28 |
+| UBS | 12 | 2026-04-10 ~ 2026-04-28 |
 
 ---
 
-## Reports
+## Reports by Bank
 
 ### BARCLAYS (2 reports)
 
-| Date | Title | Relevance | Type |
-|------|-------|-----------|------|
-| 2026-04-29 | Disruption '26: Top Ideas in Tech | MED | HTML |
-| 2026-04-10 | DriveBytes: Tesla signs $4.3bn LFP battery deal with LG | MED | HTML |
+| Date | Title | Relevance |
+|------|-------|-----------|
+| 2026-04-29 | Disruption '26: Top Ideas in Tech | MED |
+| 2026-04-10 | DriveBytes: Tesla signs $4.3bn LFP battery deal with LG | MED |
+
+### GOLDMAN (10 reports)
+
+| Date | Title | Relevance |
+|------|-------|-----------|
+| 2026-03-02 | Metals Comment: Lithium: Zimbabwe Concentrate Export Suspension | **HIGH** |
+| 2025-12-03 | Metal Views: Copper Our Favourite Industrial Metal | **HIGH** |
+| 2024-03-05 | Green Metals: Battery Metals Watch: The bear market is far from over | **HIGH** |
+| 2023-10-26 | Green Metals: Battery Metals Watch: The rationing phase | **HIGH** |
+| 2023-09-21 | Metals Comment: Battery metals bear market continues | **HIGH** |
+| 2023-06-07 | Green Metals: Battery Metals Watch: No bottom in sight | **HIGH** |
+| 2023-03-16 | Green Metals: Demand revolution gathers momentum | **HIGH** |
+| 2022-11-09 | Green Metals: Battery Metals Watch: Lithium delayed decline | **HIGH** |
+| 2022-05-29 | Green Metals: Battery Metals Watch: The end of the beginning | **HIGH** |
+| 2022-01-12 | Global Metals & Mining: EV battery metal recycling | **HIGH** |
 
 ### NOMURA (15 reports)
 
-| Date | Title | Relevance | Type |
-|------|-------|-----------|------|
-| 2026-04-28 | 一季度营收净利润同比下降，业绩阶段性承压 | MED | HTML |
-| 2026-04-27 | 一季度业绩超预期，上调营收及净利润预测 | MED | PDF |
-| 2026-04-26 | 研究观点每周汇总更新 | MED | PDF |
-| 2026-04-26 | 看好电力设备和燃气轮机的投资机遇 | MED | HTML |
-| 2026-04-23 | 2026年一季度营收及净利润高增 | MED | PDF |
-| 2026-04-23 | 技术领先优势持续，产品多元布局 | MED | PDF |
-| 2026-04-19 | 看好储能和锂电池材料的投资机遇 | **HIGH** | HTML |
-| 2026-04-15 | 3月出口增长放缓而进口提速 | MED | PDF |
-| 2026-04-12 | 研究观点每周汇总更新 | MED | PDF |
-| 2026-04-12 | 2025年净利润亏损，期待2026年扭亏为盈 | MED | PDF |
-| 2026-04-12 | 看好户储和电力设备的投资机遇 | MED | PDF |
-| 2026-04-06 | 继续看好锂电池材料的投资机遇 | **HIGH** | PDF |
-| 2026-04-06 | 研究观点每周汇总更新 | MED | PDF |
-| 2026-04-02 | 锂电池设备需求修复，新兴赛道产品持续突破 | **HIGH** | PDF |
-| 2026-04-01 | 第四季度业绩低于预期，看好储能和AI需求长期成长性 | MED | PDF |
+| Date | Title | Relevance |
+|------|-------|-----------|
+| 2026-04-28 | 一季度营收净利润同比下降，业绩阶段性承压 | MED |
+| 2026-04-27 | 一季度业绩超预期，上调营收及净利润预测 | MED |
+| 2026-04-26 | 研究观点每周汇总更新 | MED |
+| 2026-04-26 | 看好电力设备和燃气轮机的投资机遇 | MED |
+| 2026-04-23 | 2026年一季度营收及净利润高增 | MED |
+| 2026-04-23 | 技术领先优势持续，产品多元布局 | MED |
+| 2026-04-19 | 看好储能和锂电池材料的投资机遇 | **HIGH** |
+| 2026-04-15 | 3月出口增长放缓而进口提速 | MED |
+| 2026-04-12 | 研究观点每周汇总更新 | MED |
+| 2026-04-12 | 2025年净利润亏损，期待2026年扭亏为盈 | MED |
+| 2026-04-12 | 看好户储和电力设备的投资机遇 | MED |
+| 2026-04-06 | 继续看好锂电池材料的投资机遇 | **HIGH** |
+| 2026-04-06 | 研究观点每周汇总更新 | MED |
+| 2026-04-02 | 锂电池设备需求修复，新兴赛道产品持续突破 | **HIGH** |
+| 2026-04-01 | 第四季度业绩低于预期，看好储能和AI需求长期成长性 | MED |
 
 ### UBS (12 reports)
 
-| Date | Title | Relevance | Type |
-|------|-------|-----------|------|
-| 2026-04-28 | 快评: 三美股份 "一季度净利润同比/环比+26%/+8%" (买入) 林 | MED | PDF |
-| 2026-04-28 | First Read: Daily Commodities Note "Oil prices up on stalled peace talks" Shaw | MED | PDF |
-| 2026-04-28 | N.A. Chems & Pkg "The Daily InSpector" Spector | MED | PDF |
-| 2026-04-28 | Iron Ore & Coal "What's new? BHP-CMRG agreement; Indonesian Coal quotas" Allsop | MED | PDF |
-| 2026-04-27 | 快评: 赢合科技 "Q126业绩低于预期" (卖出) 李 | MED | PDF |
-| 2026-04-27 | UBS Equity Finance Soundbites - Apr 27 | MED | HTML |
-| 2026-04-27 | POSCO Holdings "Bullish on lithium; Upgrade to Buy" (Buy) Son | **HIGH** | PDF |
-| 2026-04-27 | Lithium "We've been [up] this road before" Shaw | **HIGH** | PDF |
-| 2026-04-27 | UBS: Fast Take: Tianqi Lithium "Q126 results in line with preliminary result..." | **HIGH** | PDF |
-| 2026-04-27 | GFIW Thematic Idea: Battery supercycle boosts Alt Energy & EVs | MED | HTML |
-| 2026-04-27 | AI Research "SemiBytes: Semis Rally, Fast Inference, Analog, AMAT/LRCX" Arcuri | MED | PDF |
-| 2026-04-10 | Australian Resources "Diversified Miners March Quarter Preview & Cost S..." | MED | PDF |
+| Date | Title | Relevance |
+|------|-------|-----------|
+| 2026-04-28 | 快评: 三美股份 "一季度净利润同比/环比+26%/+8%" (买入) 林 | MED |
+| 2026-04-28 | First Read: Daily Commodities Note "Oil prices up on stalled peace tal... | MED |
+| 2026-04-28 | N.A. Chems & Pkg "The Daily InSpector" Spector | MED |
+| 2026-04-28 | Iron Ore & Coal "What's new? BHP-CMRG agreement; Indonesian Coal quota... | MED |
+| 2026-04-27 | 快评: 赢合科技 "Q126业绩低于预期" (卖出) 李 | MED |
+| 2026-04-27 | UBS Equity Finance Soundbites - Apr 27 | MED |
+| 2026-04-27 | POSCO Holdings "Bullish on lithium; Upgrade to Buy" (Buy) Son | **HIGH** |
+| 2026-04-27 | Lithium "We've been [up] this road before" Shaw | **HIGH** |
+| 2026-04-27 | UBS: Fast Take: Tianqi Lithium "Q126 results in line with preliminary ... | **HIGH** |
+| 2026-04-27 | GFIW Thematic Idea: Battery supercycle boosts Alt Energy & EVs | MED |
+| 2026-04-27 | AI Research "SemiBytes: Semis Rally, Fast Inference, Analog, AMAT/LRCX... | MED |
+| 2026-04-10 | Australian Resources "Diversified Miners March Quarter Preview & Cost ... | MED |
 
 ---
 
-## Relevance
+## Relevance Levels
 
-- **HIGH**: Report title directly mentions lithium/lithium mining
-- **MED**: AI summary contains lithium-related content
+- **HIGH**: Report title directly mentions lithium, battery metals, or lithium mining companies
+- **MED**: AI summary contains lithium-related content but title does not explicitly mention it
+
+## GS Key Publication Series
+
+Goldman Sachs publishes several recurring series relevant to lithium:
+
+- **Green Metals / Battery Metals Watch** - Quarterly deep-dive into lithium, cobalt, nickel supply/demand
+- **Metals Comment** - Ad-hoc notes on specific metals topics including lithium
+- **Metal Views** - Regular metals market overview
+- **Commodity Views** - Broader commodity market analysis
 
 ---
 
 ## AI Summaries
 
-### 2026-04-29 — BARCLAYS: Disruption '26: Top Ideas in Tech
+### 2026-04-29 | BARCLAYS | Disruption '26: Top Ideas in Tech
 
 ## 报告主体 / Report Subject
 巴克莱资本 (Barclays Capital)
@@ -104,7 +137,7 @@ Semis & Semi-Cap: Unfairly pricing "peak capex." Our Semiconductor team argues l
 
 ---
 
-### 2026-04-28 — UBS: 快评: 三美股份 "一季度净利润同比/环比+26%/+8%" (买入) 林
+### 2026-04-28 | UBS | 快评: 三美股份 "一季度净利润同比/环比+26%/+8%" (买入) 林
 
 ## 报告主体 / Report Subject
 三美股份 (603379.SS)
@@ -148,7 +181,7 @@ Semis & Semi-Cap: Unfairly pricing "peak capex." Our Semiconductor team argues l
 
 ---
 
-### 2026-04-28 — UBS: First Read: Daily Commodities Note "Oil prices up on stalled
+### 2026-04-28 | UBS | First Read: Daily Commodities Note "Oil prices up on stalled
 
 ## 报告主体 / Report Subject
 瑞银集团 (UBS) 全球研究部
@@ -180,7 +213,7 @@ Semis & Semi-Cap: Unfairly pricing "peak capex." Our Semiconductor team argues l
 
 ---
 
-### 2026-04-28 — UBS: N.A. Chems & Pkg "The Daily InSpector" Spector
+### 2026-04-28 | UBS | N.A. Chems & Pkg "The Daily InSpector" Spector
 
 ## 报告主体 / Report Subject
 UBS北美化工与包装行业研究报告"The Daily InSpector"
@@ -230,7 +263,7 @@ UBS北美化工与包装行业研究报告"The Daily InSpector"
 
 ---
 
-### 2026-04-28 — UBS: Iron Ore & Coal "What's new? BHP-CMRG agreement; Indonesian 
+### 2026-04-28 | UBS | Iron Ore & Coal "What's new? BHP-CMRG agreement; Indonesian 
 
 ## 报告主体 / Report Subject
 瑞银集团 (UBS) 铁矿石与煤炭研究报告，分析师 Myles Allsop，发布日期 2026年4月27日。
@@ -270,7 +303,7 @@ UBS北美化工与包装行业研究报告"The Daily InSpector"
 
 ---
 
-### 2026-04-28 — NOMURA: 一季度营收净利润同比下降，业绩阶段性承压
+### 2026-04-28 | NOMURA | 一季度营收净利润同比下降，业绩阶段性承压
 
 ## 报告主体 / Report Subject
 野村证券 (Nomura) 关于某未具名公司（根据上下文推测可能是某储能或新能源企业）的2026年第一季度业绩研究报告
@@ -308,7 +341,7 @@ UBS北美化工与包装行业研究报告"The Daily InSpector"
 
 ---
 
-### 2026-04-27 — UBS: 快评: 赢合科技 "Q126业绩低于预期" (卖出) 李
+### 2026-04-27 | UBS | 快评: 赢合科技 "Q126业绩低于预期" (卖出) 李
 
 ## 报告主体 / Report Subject
 赢合科技 (300457.SZ) - 瑞银证券研究报告
@@ -359,7 +392,7 @@ UBS北美化工与包装行业研究报告"The Daily InSpector"
 
 ---
 
-### 2026-04-27 — UBS: UBS Equity Finance Soundbites - Apr 27
+### 2026-04-27 | UBS | UBS Equity Finance Soundbites - Apr 27
 
 ## 报告主体 / Report Subject
 瑞银集团 (UBS) 股票融资快报 - 4月27日
@@ -388,7 +421,7 @@ UBS北美化工与包装行业研究报告"The Daily InSpector"
 
 ---
 
-### 2026-04-27 — UBS: POSCO Holdings "Bullish on lithium; Upgrade to Buy" (Buy) So
+### 2026-04-27 | UBS | POSCO Holdings "Bullish on lithium; Upgrade to Buy" (Buy) So
 
 ## 报告主体 / Report Subject
 POSCO Holdings (POSCO Holdings, 005490.KS)
@@ -435,7 +468,7 @@ POSCO Holdings (POSCO Holdings, 005490.KS)
 
 ---
 
-### 2026-04-27 — UBS: Lithium "We've been [up] this road before" Shaw
+### 2026-04-27 | UBS | Lithium "We've been [up] this road before" Shaw
 
 ## 报告主体 / Report Subject
 瑞银集团 (UBS) 锂行业研究报告，发布于2026年4月27日
@@ -466,7 +499,7 @@ POSCO Holdings (POSCO Holdings, 005490.KS)
 
 ---
 
-### 2026-04-27 — UBS: UBS: Fast Take: Tianqi Lithium "Q126 results in line with pr
+### 2026-04-27 | UBS | UBS: Fast Take: Tianqi Lithium "Q126 results in line with pr
 
 ## 报告主体 / Report Subject
 天齐锂业 (Tianqi Lithium) 股票代码: 002466.SZ
@@ -508,7 +541,7 @@ UBS维持对天齐锂业的买入评级，目标价为78.30元人民币，较当
 
 ---
 
-### 2026-04-27 — UBS: GFIW Thematic Idea: Battery supercycle boosts Alt Energy & E
+### 2026-04-27 | UBS | GFIW Thematic Idea: Battery supercycle boosts Alt Energy & E
 
 ## 报告主体 / Report Subject
 瑞银(UBS)主题研究报告：电池超级周期推动新能源与电动汽车发展
@@ -550,7 +583,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-27 — UBS: AI Research "SemiBytes: Semis Rally, Fast Inference, Analog,
+### 2026-04-27 | UBS | AI Research "SemiBytes: Semis Rally, Fast Inference, Analog,
 
 ## 报告主体 / Report Subject
 瑞银集团 (UBS) 
@@ -583,7 +616,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-27 — NOMURA: 一季度业绩超预期，上调营收及净利润预测
+### 2026-04-27 | NOMURA | 一季度业绩超预期，上调营收及净利润预测
 
 ## 报告主体 / Report Subject
 科达利 (002850.SZ / 002850 CH)
@@ -617,7 +650,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-26 — NOMURA: 研究观点每周汇总更新
+### 2026-04-26 | NOMURA | 研究观点每周汇总更新
 
 ## 报告主体 / Report Subject
 野村证券研究观点每周汇总更新（2026年4月18日至2026年4月24日）
@@ -672,7 +705,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-26 — NOMURA: 看好电力设备和燃气轮机的投资机遇
+### 2026-04-26 | NOMURA | 看好电力设备和燃气轮机的投资机遇
 
 ## 报告主体 / Report Subject
 野村证券 (Nomura) 看好电力设备和燃气轮机的投资机遇
@@ -704,7 +737,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-23 — NOMURA: 2026年一季度营收及净利润高增
+### 2026-04-23 | NOMURA | 2026年一季度营收及净利润高增
 
 ## 报告主体 / Report Subject
 厦钨新能 (688778.SH / 688778 CH)
@@ -735,7 +768,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-23 — NOMURA: 技术领先优势持续，产品多元布局
+### 2026-04-23 | NOMURA | 技术领先优势持续，产品多元布局
 
 ## 报告主体 / Report Subject
 宁德时代 (CATL) 300750.SZ / 300750 CH
@@ -769,7 +802,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-19 — NOMURA: 看好储能和锂电池材料的投资机遇
+### 2026-04-19 | NOMURA | 看好储能和锂电池材料的投资机遇
 
 ## 报告主体 / Report Subject
 野村证券 (Nomura) 看好储能和锂电池材料的投资机遇
@@ -798,7 +831,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-15 — NOMURA: 3月出口增长放缓而进口提速
+### 2026-04-15 | NOMURA | 3月出口增长放缓而进口提速
 
 ## 报告主体 / Report Subject
 野村国际（Nomura）宏观点评：2026年3月中国出口增长放缓而进口提速
@@ -833,7 +866,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-12 — NOMURA: 研究观点每周汇总更新
+### 2026-04-12 | NOMURA | 研究观点每周汇总更新
 
 ## 报告主体 / Report Subject
 野村东方国际证券研究观点每周汇总更新（2026年4月4日至2026年4月10日）
@@ -869,7 +902,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-12 — NOMURA: 2025年净利润亏损，期待2026年扭亏为盈
+### 2026-04-12 | NOMURA | 2025年净利润亏损，期待2026年扭亏为盈
 
 ## 报告主体 / Report Subject
 容百科技 (688005.SH / 688005 CH)
@@ -901,7 +934,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-12 — NOMURA: 看好户储和电力设备的投资机遇
+### 2026-04-12 | NOMURA | 看好户储和电力设备的投资机遇
 
 ## 报告主体 / Report Subject
 野村东方国际证券 (Nomura)
@@ -949,7 +982,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-10 — BARCLAYS: DriveBytes: Tesla signs $4.3bn LFP battery deal with LG
+### 2026-04-10 | BARCLAYS | DriveBytes: Tesla signs $4.3bn LFP battery deal with LG
 
 ## 报告主体 / Report Subject
 特斯拉 (Tesla, Inc.) (TSLA) 与 LG 能源解决方案 (LG Energy Solution) 签署43亿美元磷酸铁锂(LFP)电池协议
@@ -976,7 +1009,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-10 — UBS: Australian Resources "Diversified Miners March Quarter Previ
+### 2026-04-10 | UBS | Australian Resources "Diversified Miners March Quarter Previ
 
 ## 报告主体 / Report Subject
 瑞银(UBS)关于澳大利亚多元化矿业公司2026年3月季度业绩前瞻及成本情景分析报告，涉及公司包括：必和必拓(BHP)、力拓(RIO)、Fortescue Metals(FMG)、美铝(Alcoa Corporation, AAI)、South32(S32)、Mineral Resources(MIN)、Whitehaven Coal(WHC)、Coronado Global Resources(CRN)和Deterra Royalties(DRR)。
@@ -1008,7 +1041,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-06 — NOMURA: 继续看好锂电池材料的投资机遇
+### 2026-04-06 | NOMURA | 继续看好锂电池材料的投资机遇
 
 ## 报告主体 / Report Subject
 野村东方国际证券 (Nomura)
@@ -1044,7 +1077,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-06 — NOMURA: 研究观点每周汇总更新
+### 2026-04-06 | NOMURA | 研究观点每周汇总更新
 
 ## 报告主体 / Report Subject
 野村证券研究观点每周汇总更新（2026年3月28日至2026年4月3日）
@@ -1089,7 +1122,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-02 — NOMURA: 锂电池设备需求修复，新兴赛道产品持续突破
+### 2026-04-02 | NOMURA | 锂电池设备需求修复，新兴赛道产品持续突破
 
 ## 报告主体 / Report Subject
 先导智能 (300450.SZ, 300450 CH)
@@ -1120,7 +1153,7 @@ Investors with limited downside assumptions could use a funded call-spread colla
 
 ---
 
-### 2026-04-01 — NOMURA: 第四季度业绩低于预期，看好储能和AI需求长期成长性
+### 2026-04-01 | NOMURA | 第四季度业绩低于预期，看好储能和AI需求长期成长性
 
 ## 报告主体 / Report Subject
 阳光电源 (300274.SZ / 300274 CH)
