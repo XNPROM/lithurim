@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lithurim — Lithium Mining Research Reports</title>
+<title>Lithurim — 锂矿与电池金属研究报告</title>
 <style>
   :root {
-    --bg: #0d1117; --surface: #161b22; --border: #30363d;
-    --text: #e6edf3; --text2: #8b949e; --accent: #58a6ff;
+    --bg: #ffffff; --surface: #f6f8fa; --border: #d0d7de;
+    --text: #1f2328; --text2: #656d76; --accent: #0969da;
     --goldman: #7eb8da; --ubs: #e10600; --nomura: #cc0000;
     --hsbc: #db0011; --barclays: #00aeef; --citi: #003b70;
-    --high: #3fb950; --med: #d29922;
+    --high: #1a7f37; --med: #9a6700;
+    --green-light: #dafbe1; --red-light: #ffebe9; --yellow-light: #fff8c5;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
-  header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 2rem 1rem; text-align: center; }
-  header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+  header { background: linear-gradient(135deg, #f0f6ff 0%, #e8f0fe 100%); border-bottom: 1px solid var(--border); padding: 2rem 1rem; text-align: center; }
+  header h1 { font-size: 2rem; margin-bottom: 0.25rem; color: var(--text); }
   header h1 span { color: var(--accent); }
   header p { color: var(--text2); font-size: 1rem; }
 
@@ -24,6 +25,47 @@
   .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.5rem; text-align: center; min-width: 120px; }
   .stat-card .num { font-size: 2rem; font-weight: 700; color: var(--accent); }
   .stat-card .label { font-size: 0.8rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* Investment Summary */
+  .summary-section { max-width: 1100px; margin: 0 auto 2rem; padding: 0 1rem; }
+  .summary-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem 2rem; }
+  .summary-card h2 { font-size: 1.25rem; margin-bottom: 1rem; color: var(--text); display: flex; align-items: center; gap: 0.5rem; }
+  .summary-card h2 .icon { font-size: 1.1rem; }
+
+  .verdict { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 1rem; border-radius: 20px; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem; }
+  .verdict.buy { background: var(--green-light); color: var(--high); border: 1px solid #aff0af; }
+  .verdict.hold { background: var(--yellow-light); color: var(--med); border: 1px solid #f5e060; }
+  .verdict.sell { background: var(--red-light); color: #cf222e; border: 1px solid #f8a4a8; }
+
+  .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
+  .summary-block h3 { font-size: 0.85rem; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; border-bottom: 2px solid var(--border); padding-bottom: 0.3rem; }
+  .summary-block ul { list-style: none; padding: 0; }
+  .summary-block li { padding: 0.3rem 0; font-size: 0.88rem; line-height: 1.5; }
+  .summary-block li .ticker { font-weight: 700; color: var(--accent); }
+  .summary-block li .rating { font-size: 0.75rem; padding: 1px 6px; border-radius: 8px; font-weight: 600; margin-left: 4px; }
+  .summary-block li .rating.buy { background: var(--green-light); color: var(--high); }
+  .summary-block li .rating.sell { background: var(--red-light); color: #cf222e; }
+  .summary-block li .rating.neutral { background: var(--yellow-light); color: var(--med); }
+  .summary-block li .target { color: var(--text2); font-size: 0.82rem; }
+  .summary-block li .upside { color: var(--high); font-weight: 600; font-size: 0.82rem; }
+  .summary-block li .downside { color: #cf222e; font-weight: 600; font-size: 0.82rem; }
+
+  .key-data { margin-top: 1rem; padding: 0.8rem 1rem; background: #fff; border: 1px solid var(--border); border-radius: 8px; }
+  .key-data h3 { font-size: 0.85rem; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+  .key-data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem 1.5rem; }
+  .key-data-item { font-size: 0.85rem; }
+  .key-data-item .k { color: var(--text2); }
+  .key-data-item .v { font-weight: 700; color: var(--text); }
+
+  .risk-box { margin-top: 1rem; padding: 0.8rem 1rem; background: var(--red-light); border: 1px solid #f8a4a8; border-radius: 8px; }
+  .risk-box h3 { font-size: 0.85rem; font-weight: 700; color: #cf222e; margin-bottom: 0.4rem; }
+  .risk-box ul { list-style: disc; padding-left: 1.2rem; }
+  .risk-box li { font-size: 0.85rem; color: #6e1b23; line-height: 1.5; }
+
+  @media (max-width: 700px) {
+    .summary-grid { grid-template-columns: 1fr; }
+    .key-data-grid { grid-template-columns: 1fr 1fr; }
+  }
 
   .controls { display: flex; justify-content: center; gap: 0.75rem; padding: 0 1rem 1rem; flex-wrap: wrap; }
   .controls button { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.4rem 1rem; border-radius: 20px; cursor: pointer; font-size: 0.85rem; transition: all 0.15s; }
@@ -39,12 +81,12 @@
   .month-header { position: sticky; top: 0; z-index: 10; background: var(--bg); padding: 0.5rem 0; font-size: 1.1rem; font-weight: 600; color: var(--text2); border-bottom: 1px solid var(--border); margin-bottom: 0.75rem; padding-left: 130px; }
 
   .report-row { display: grid; grid-template-columns: 100px 18px 1fr; gap: 0; padding: 0.6rem 0; align-items: start; }
-  .report-row:hover { background: rgba(88,166,255,0.04); }
+  .report-row:hover { background: rgba(9,105,218,0.04); }
 
   .report-date { font-size: 0.8rem; color: var(--text2); text-align: right; padding-right: 12px; padding-top: 2px; font-variant-numeric: tabular-nums; }
 
   .report-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; position: relative; left: -4px; }
-  .report-dot.high { background: var(--high); box-shadow: 0 0 6px rgba(63,185,80,0.4); }
+  .report-dot.high { background: var(--high); box-shadow: 0 0 4px rgba(26,127,55,0.3); }
   .report-dot.medium { background: var(--med); }
 
   .report-content { padding-left: 14px; }
@@ -59,14 +101,14 @@
   .bank-tag.barclays { background: var(--barclays); color: #000; }
   .bank-tag.citi { background: var(--citi); }
   .relevance-tag { font-size: 0.65rem; padding: 1px 6px; border-radius: 8px; font-weight: 600; }
-  .relevance-tag.high { background: rgba(63,185,80,0.15); color: var(--high); }
-  .relevance-tag.medium { background: rgba(210,153,34,0.15); color: var(--med); }
+  .relevance-tag.high { background: var(--green-light); color: var(--high); }
+  .relevance-tag.medium { background: var(--yellow-light); color: var(--med); }
 
   .summary-box { margin-top: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.6rem 0.8rem; font-size: 0.82rem; color: var(--text2); line-height: 1.5; display: none; max-height: 300px; overflow-y: auto; }
   .summary-box.visible { display: block; }
   .summary-box .sum-label { color: var(--accent); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
 
-  .section-tag { font-size: 0.7rem; color: var(--text2); background: rgba(139,148,158,0.1); padding: 1px 6px; border-radius: 8px; }
+  .section-tag { font-size: 0.7rem; color: var(--text2); background: rgba(101,109,118,0.1); padding: 1px 6px; border-radius: 8px; }
 
   @media (max-width: 700px) {
     .timeline::before { left: 14px; }
@@ -84,10 +126,73 @@
 
 <header>
   <h1>Lith<span>urim</span></h1>
-  <p>Lithium Mining & Battery Metals — Investment Bank Research Reports</p>
+  <p>锂矿与电池金属 — 外资投行研究报告</p>
 </header>
 
 <div class="stats" id="stats"></div>
+
+<!-- Investment Summary -->
+<section class="summary-section">
+<div class="summary-card">
+  <h2><span class="icon">&#x1F4C8;</span> 投资观点总结</h2>
+  <div class="verdict buy">&#x2705; 偏多 — 多家外资行上调锂价预期，供需趋紧</div>
+
+  <div class="summary-grid">
+    <div class="summary-block">
+      <h3>推荐买入</h3>
+      <ul>
+        <li><span class="ticker">天齐锂业 002466</span> <span class="rating buy">Buy</span> <span class="target">目标价 78.30</span> <span class="upside">+6.3%</span><br>中国唯一锂原料完全自给，Greenbushes矿山 — UBS</li>
+        <li><span class="ticker">宁德时代 300750</span> <span class="rating buy">Add</span> <span class="target">目标价 612</span> <span class="upside">+40.3%</span><br>超级科技日发布多款新品，全球动力电池龙头 — 野村</li>
+        <li><span class="ticker">先导智能 300450</span> <span class="rating buy">Buy</span> <span class="target">目标价 73</span> <span class="upside">+50.8%</span><br>锂电设备需求修复，固态电池设备突破 — 野村</li>
+        <li><span class="ticker">科达利 002850</span> <span class="rating buy">OW</span> <span class="target">目标价 293</span> <span class="upside">+42.8%</span><br>Q1业绩超预期，全球化布局+机器人 — 野村</li>
+        <li><span class="ticker">厦钨新能 688778</span> <span class="rating buy">Add</span> <span class="target">目标价 103.2</span> <span class="upside">+29.1%</span><br>Q1营收+117.8%，正极材料量价齐升 — 野村</li>
+        <li><span class="ticker">POSCO 005490.KS</span> <span class="rating buy">Buy</span> <span class="target">目标价 50万韩元</span> <span class="upside">+20%</span><br>锂资产重估，阿根廷2026年盈亏平衡 — UBS</li>
+        <li><span class="ticker">比亚迪 1211.HK</span> <span class="rating buy">Buy</span><br>全球电池+电气化高确定性敞口 — UBS</li>
+      </ul>
+    </div>
+    <div class="summary-block">
+      <h3>回避 / 谨慎</h3>
+      <ul>
+        <li><span class="ticker">赢合科技 300457</span> <span class="rating sell">Sell</span> <span class="target">目标价 18.40</span> <span class="downside">-35.8%</span><br>Q1利润-74%，毛利率大幅下滑 — UBS</li>
+        <li><span class="ticker">阳光电源 300274</span> <span class="rating neutral">Add→Neutral</span><br>Q1业绩承压，储能价格压力+碳酸锂上行 — 野村</li>
+      </ul>
+      <h3 style="margin-top:1rem">值得关注的环节</h3>
+      <ul>
+        <li><strong>锂矿资源</strong>：碳酸锂价格上行，天齐/赣锋/IGO受益</li>
+        <li><strong>储能(BESS)</strong>：全球新增装机+87%，美国需求三倍增长</li>
+        <li><strong>锂电池材料</strong>：量价齐升周期，正极/电解液/隔膜</li>
+        <li><strong>电池设备</strong>：固态电池产业化，钠电设备新赛道</li>
+        <li><strong>含氟材料</strong>：六氟磷酸锂/制冷剂涨价 — 三美股份</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="key-data">
+    <h3>关键市场数据</h3>
+    <div class="key-data-grid">
+      <div class="key-data-item"><span class="k">锂辉石(SC6)</span> <span class="v">$1,400/t</span></div>
+      <div class="key-data-item"><span class="k">2026电池需求</span> <span class="v">1.81 TWh</span></div>
+      <div class="key-data-item"><span class="k">2027电池需求</span> <span class="v">2.35 TWh</span></div>
+      <div class="key-data-item"><span class="k">锂需求2025→27</span> <span class="v">170→232万吨</span></div>
+      <div class="key-data-item"><span class="k">供需缺口</span> <span class="v">供<需 ~2.7万吨</span></div>
+      <div class="key-data-item"><span class="k">BESS项目管道</span> <span class="v">2.1 TWh</span></div>
+    </div>
+  </div>
+
+  <div class="risk-box">
+    <h3>风险提示</h3>
+    <ul>
+      <li>供应可能超预期增长（尼日利亚等不透明地区）</li>
+      <li>中国EV激励减少、购置税调整、消费者持币待购</li>
+      <li>美国EV市场仍面临挑战</li>
+      <li>碳酸锂价格上行侵蚀中游利润（储能/电池厂）</li>
+      <li>贸易壁垒上升影响中国电池制造商全球扩张</li>
+      <li>中东冲突不确定性影响能源成本和需求预测</li>
+      <li>锂价波动性高，历史上多次"假突破"</li>
+    </ul>
+  </div>
+</div>
+</section>
 
 <div class="controls" id="controls">
   <button class="active" data-filter="all">All</button>
